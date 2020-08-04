@@ -1,8 +1,8 @@
 class Airport {
-  land() {
+  land(plane) {
     return "Plane landed";
   }
-  takeOff() {
+  takeOff(plane) {
     return "Plane taken off"
   }
 }
