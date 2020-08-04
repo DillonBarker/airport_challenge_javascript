@@ -1,16 +1,15 @@
-describe('Airport', function() {
+describe('Airport', function(){
+  var airport;
+  var plane;
   beforeEach(function(){
-    plane = jasmine.createSpyObj('plane',['land']);
     airport = new Airport();
+    plane = jasmine.createSpy('plane',['land']);
+  });
+  it('has no planes by default', function(){
+    expect(airport.planes()).toEqual([]);
+  });
+  it('can clear planes for landing', function(){
+    airport.clearForLanding(plane);
+    expect(airport.planes()).toEqual([plane])
   })
-  describe('Airport can receive land and return plane landed', function() {
-    it('Returns plane landed', function() {
-      expect(airport.land(plane)).toContain("Plane landed")
-    })
-  })
-  describe('Airport can receive take off and return plane taken off', function(){
-    it('Returns plane taken off', function() {
-      expect(airport.takeOff()).toEqual("Plane taken off")
-    })
-  })
-})
+});

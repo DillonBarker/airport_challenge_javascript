@@ -1,5 +1,5 @@
 class Plane {
-  constructor() {
-    this.grounded = true;
-  }
-}
+  land(airport) {
+    airport.clearForLanding(this)
+  };
+};

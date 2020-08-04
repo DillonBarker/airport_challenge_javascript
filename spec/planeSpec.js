@@ -1,11 +1,12 @@
-describe('Plane', function() {
+describe('Plane',function(){
+  var plane;
+  var airport;
   beforeEach(function(){
-    airport = jasmine.createSpyObj('Airport',['isGrounded']);
     plane = new Plane();
-  })
-  describe('Plane starts as grounded', function() {
-    it('returns true for plane grounded', function() {
-      expect(plane.grounded).toBeTruthy()
-    })
-  })
-})
+    airport = jasmine.createSpyObj('airport',['clearForLanding']);
+  });
+  it('can land at an airport', function(){
+    plane.land(airport);
+    expect(airport.clearForLanding).toHaveBeenCalledWith(plane);
+  });
+});
