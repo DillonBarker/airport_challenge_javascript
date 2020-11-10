@@ -45,3 +45,6 @@ As an air traffic controller
 To ensure safety 
 I want to prevent landing when weather is stormy 
 ```
+## Future goal
+- A stretch goal I want to complete in the future is to add capacity to the airport.
+- This would involve adding a isFull? method and capacity attribute to the aiport.
