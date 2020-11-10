@@ -51,6 +51,8 @@ As an air traffic controller
 To ensure safety 
 I want to prevent landing when weather is stormy 
 ```
-## Future goal
+## Future goals
 - A stretch goal I want to complete in the future is to add capacity to the airport.
 - This would involve adding a isFull? method and capacity attribute to the aiport.
+
+- In addition to this goal, I like the idea of incorporating a conductor or air traffic control class to this code. At the moment the plane object and weather object are good they are responsible for just 1 thing each. However, the airport class has mulitple responsibilities so I would like to extract takeoff and land methods onto a airtraffic control so that the logic happens elsewhere - this would keep the code to SRP.
