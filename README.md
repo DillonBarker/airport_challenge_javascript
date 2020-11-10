@@ -12,10 +12,16 @@
 
 ```
 
-In this challenge I tried to re-create the airport challenge from week1 of Ruby into JS.
+## The task
 
-I went about it stepwise, building each test and TDD to get them working.
-- I used Jasmine Spy Objects in order to mock behaviour in order to get randomness of my code to work correctly.
+In this challenge I tried to re-create the airport challenge from week1 of Ruby into JavaScript in order to practice with a new language and have reference to Ruby which I have already used to complete this challenge.
+
+## My process
+
+I went about it stepwise, building each test and then following TDD to get them working - referring to my code written in Ruby I was able to extract the methods and how they interacted into my JavaScript code.
+
+### Interesting things
+- I used **Jasmine Spy Objects** in order to mock behaviour in order to get randomness of my code to work correctly.
 - I did this by registering the weather as true or false for stormy depending on what I wanted to test.
 
 The user stories were as follows:
