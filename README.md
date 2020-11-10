@@ -1,4 +1,4 @@
-# airport_challenge_javascript
+# airport challenge javascript
 
 ```
         ______
@@ -15,6 +15,8 @@
 In this challenge I tried to re-create the airport challenge from week1 of Ruby into JS.
 
 I went about it stepwise, building each test and TDD to get them working.
+- I used Jasmine Spy Objects in order to mock behaviour in order to get randomness of my code to work correctly.
+- I did this by registering the weather as true or false for stormy depending on what I wanted to test.
 
 The user stories were as follows:
 
